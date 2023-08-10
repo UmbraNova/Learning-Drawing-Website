@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS and CSS and HTML</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="bodyContainer">
+    <main>
+    
+    <div id="mainButtons">
+    <button id="button1">Button Asterix</button>
+    <input id="button2" type="button" value="Input Obelix"  class="theHover">
+    <input id="button3" type="button" value="Input Falbala"  class="theHover">
+    </div>
+
+    <div id="theDiv"></div>
+    <br>
+
+    <p id="target" style="height: 40px; margin-top: 20px"></p>
+    <form name="logIn" id="formLog" action="https://www.google.com" method="get">
+        <span>Want to Google?</span>
+        <input type="text" name="nameFirst" id="nameFirst">
+        <!-- Remainder: dont put a name attribute on the submit button -->
+        <input type="submit" id="submit">
+    </form>
+
+    <div>
+    <p id="p1">Success is often defined as the ability to reach your goals in life, whatever those goals may be. In some ways, a better word for success might be attainment, accomplishment, or progress. It is not necessarily a destination but a journey that helps develop the skills and resources you need to thrive.</p>
+    <p id="p2">Because goals are sef-created, what people view as success can vary depending on their needs, goals, and situation.</p>
+    <p id="p3">There are many different tactics for how to be successful in life, but the strategy that works best for you may depend on what success means to you. If you think of success as doing well at work or earning a high salary, your professional goals and accomplishments will take priority.</p>
+    <p id="p4">While professional success can be one piece of the puzzle, it leaves out many other important areas of life. Family, romantic relationships, academics, and athletics are just a few areas where people may strive for success. Your definition of success may vary, but many might define it as being fulfilled, happy, safe, healthy, and loved.</p>
+    </div>
+
+    <div class="drawContainer">
+        <div id="drawFrame">
+            <h2>Drawing on screen with JS</h2>
+            <canvas id="whiteBoard" onmousemove="mainDrawing(event)" onmousedown="mouseDown()" onmouseup="mouseUp()" width="1200" height="600" ></canvas>
+            <div id="colorButtons">
+                <input type="button" class="color red" onclick="selectColor('red')">
+                <input type="button" class="color green" onclick="selectColor('green')">
+                <input type="button" class="color yellow" onclick="selectColor('yellow')">
+                <input type="button" class="color orange" onclick="selectColor('orange')">
+                <input type="button" class="color blue" onclick="selectColor('blue')">
+                <input type="button" class="color pink" onclick="selectColor('pink')">
+                <input type="button" class="color purple" onclick="selectColor('purple')">
+                <input type="button" class="color brown" onclick="selectColor('rgb(58, 36, 27)')">
+                <input type="button" class="color black" onclick="selectColor('black')">
+                <input type="button" class="color white" onclick="selectColor('white')">
+
+            </div>
+
+            
+            <input type="button" class="color select select1" value="1" onclick="selectSize('1')">
+            <input type="button" class="color select select2" value="3" onclick="selectSize('3')">
+            <input type="button" class="color select select3" value="10" onclick="selectSize('10')">
+            <input type="button" class="color select select4" value="30" onclick="selectSize('30')">
+            <input type="button" class="color select select5" value="60" onclick="selectSize('60')">
+            <input type="button" class="color select select6" value="90" onclick="selectSize('90')">
+            <p id="sizeInfo">1 PX</p>
+
+            <input type="button" class="color resetB" value="RESET" onclick="resetCanvas()">
+        </div> <!-- drawFrame END -->
+
+    </div> <!-- drawContainer END -->
+
+    </main>
+    <script src="script.js"></script>
+    <script src="validate.js"></script>
+</body>
+</html>
